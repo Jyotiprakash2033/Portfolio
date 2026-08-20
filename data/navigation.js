@@ -16,6 +16,10 @@ export const navigation = [
     href: "#skills"
   },
   {
+    label: "Certificates",
+    href: "#certificates"
+  },
+  {
     label: "Contact",
     href: "#contact"
   }

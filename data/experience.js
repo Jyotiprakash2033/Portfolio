@@ -8,11 +8,11 @@ export const experiences = [
     tags: ["Unity3D", "C#", "VR", "Oculus SDK"]
   },
   {
-    period: "2021 - 2023",
-    category: "Custom Development, Part-Time",
+    period: "May 2024 - July 2024",
+    category: "EdTech Development (Summer Break)",
     role: "Freelance Developer",
-    company: "Contract / Freelance",
-    description: "Designed and implemented modular systems, implemented APIs, and built customized software solutions for various startup clients.",
-    tags: ["Full-Stack", "Node.js", "Prisma"]
+    company: "Prayas IAB",
+    description: "Designed and developed the frontend of a React Native EdTech platform with a six-level academic hierarchy during summer break. Contributed to building PostgreSQL schemas using Prisma ORM and developed custom RESTful backend APIs with Node.js and Express.js.",
+    tags: ["React Native", "Node.js", "Prisma", "PostgreSQL"]
   }
 ];

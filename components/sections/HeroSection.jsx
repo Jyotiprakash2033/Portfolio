@@ -42,7 +42,7 @@ export default function HeroSection() {
         </div>
 
         {/* Bento Grid */}
-        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
+        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           
           {/* Card 1: Professional Summary */}
           <Card className="lg:col-span-2 md:col-span-2 flex flex-col justify-between border-zinc-800/80 bg-zinc-900/40 p-6 backdrop-blur-sm">
@@ -59,31 +59,7 @@ export default function HeroSection() {
             </div>
           </Card>
 
-          {/* Card 2: VR Dev Intern */}
-          <Card className="lg:col-span-1 lg:row-span-2 flex flex-col justify-between border-zinc-800/80 bg-zinc-900/40 p-6 backdrop-blur-sm">
-            <div>
-              <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-zinc-800/50 border border-zinc-700/30 text-blue-400">
-                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                </svg>
-              </div>
-              <h2 className="text-lg font-bold text-white tracking-wide">{bento.vrIntern.role}</h2>
-              <p className="text-xs text-zinc-500 mt-0.5">@ {bento.vrIntern.company}</p>
-              <p className="mt-3 text-xs leading-relaxed text-zinc-400">
-                {bento.vrIntern.description}
-              </p>
-            </div>
-            
-            {/* Tech stats block instead of image */}
-            <div className="mt-4 rounded-lg bg-zinc-950/60 p-3 font-mono text-[10px] text-zinc-400 border border-zinc-800/60 space-y-1.5">
-              <div className="flex justify-between"><span className="text-zinc-600">engine:</span> <span>Unity / WebXR</span></div>
-              <div className="flex justify-between"><span className="text-zinc-600">pipeline:</span> <span>URP Optimized</span></div>
-              <div className="flex justify-between"><span className="text-zinc-600">target:</span> <span>90 FPS Stable</span></div>
-            </div>
-          </Card>
-
-          {/* Card 3: NIT Patna */}
+          {/* Card 2: NIT Patna */}
           <Card className="lg:col-span-1 flex flex-col justify-between border-zinc-800/80 bg-zinc-900/40 p-6 backdrop-blur-sm">
             <div>
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-zinc-800/50 border border-zinc-700/30 text-blue-400">
@@ -101,20 +77,21 @@ export default function HeroSection() {
             </div>
           </Card>
 
-          {/* Card 4: RISC-V Processor */}
+          {/* Card 3: Prayas IAB */}
           <Card className="lg:col-span-2 md:col-span-2 flex flex-col justify-between border-zinc-800/80 bg-zinc-900/40 p-6 backdrop-blur-sm">
             <div>
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-zinc-800/50 border border-zinc-700/30 text-blue-400">
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
               </div>
-              <h2 className="text-lg font-bold text-white tracking-wide">{bento.riscv.title}</h2>
+              <h2 className="text-lg font-bold text-white tracking-wide">{bento.prayas.title}</h2>
+              <p className="text-xs text-zinc-500 mt-0.5">{bento.prayas.subtitle}</p>
               <p className="mt-2 text-sm leading-relaxed text-zinc-400">
-                {bento.riscv.description}
+                {bento.prayas.description}
               </p>
               <div className="mt-4 flex flex-wrap gap-2">
-                {bento.riscv.tags.map((tag) => (
+                {bento.prayas.tags.map((tag) => (
                   <span key={tag} className="rounded-md bg-zinc-800/60 border border-zinc-700/30 px-2 py-0.5 text-xs text-zinc-400">
                     {tag}
                   </span>
@@ -123,7 +100,7 @@ export default function HeroSection() {
             </div>
           </Card>
 
-          {/* Card 5: LeetCode Stats */}
+          {/* Card 4: LeetCode Stats */}
           <Card className="lg:col-span-1 flex flex-col justify-between border-zinc-800/80 bg-zinc-900/40 p-6 backdrop-blur-sm">
             <div>
               <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-zinc-800/50 border border-zinc-700/30 text-blue-400">

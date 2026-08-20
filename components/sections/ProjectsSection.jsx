@@ -48,15 +48,17 @@ export default function ProjectsSection() {
               </div>
 
               {/* Action Buttons */}
-              <div className="mt-6 flex flex-wrap gap-3 pt-4 border-t border-zinc-800/60">
-                {project.links.map((link) => (
-                  <a key={link.label} href={link.href}>
-                    <Button variant={link.icon === "code" ? "primary" : "secondary"} className="py-2 px-4 text-xs">
-                      {link.label}
-                    </Button>
-                  </a>
-                ))}
-              </div>
+              {project.links && project.links.length > 0 && (
+                <div className="mt-6 flex flex-wrap gap-3 pt-4 border-t border-zinc-800/60">
+                  {project.links.map((link) => (
+                    <a key={link.label} href={link.href}>
+                      <Button variant={link.icon === "code" ? "primary" : "secondary"} className="py-2 px-4 text-xs">
+                        {link.label}
+                      </Button>
+                    </a>
+                  ))}
+                </div>
+              )}
             </Card>
           ))}
         </div>
